@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             // user is already logged in
                             // TODO show a welcome message
-                            Timber.d("%s was already logged in!", userName);
+                            Timber.d("onSuccess: %s was already logged in!", userName);
                             Toast.makeText(MainActivity.this, "Hey,  " + userName + " welcome back!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(MainActivity.this, CometChatUnified.class));
                         }
